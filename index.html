@@ -1,4 +1,1690 @@
-<div class="contact-details">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ejogbe Ofeoriste Joy | AI Video Ads Creator</title>
+
+  <meta name="description" content="Ejogbe Ofeoriste Joy is an AI Video Ads Creator and Content Strategist creating engaging visual content for businesses.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root {
+      --cream: #F7F3EC;
+      --beige: #E8DED0;
+      --dark: #171717;
+      --terracotta: #B96545;
+      --gold: #C9A66B;
+      --white: #FFFFFF;
+      --muted: #6E685F;
+      --border: rgba(23, 23, 23, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .serif {
+      font-family: "Playfair Display", serif;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(247, 243, 236, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--terracotta);
+    }
+
+    .nav-button {
+      background: var(--dark);
+      color: var(--white);
+      padding: 11px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      background: var(--beige);
+      border-radius: 50%;
+      right: -140px;
+      top: -100px;
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(48px, 6vw, 82px);
+      line-height: 0.98;
+      max-width: 700px;
+      margin-bottom: 25px;
+    }
+
+    .hero-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      max-width: 580px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .button-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .button-dark:hover {
+      transform: translateY(-3px);
+      background: var(--terracotta);
+    }
+
+    .button-outline {
+      border: 1px solid var(--dark);
+    }
+
+    .button-outline:hover {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-frame {
+      width: min(420px, 100%);
+      aspect-ratio: 4 / 5;
+      background: var(--beige);
+      border-radius: 48% 48% 22px 22px;
+      position: relative;
+      overflow: hidden;
+      border: 10px solid var(--white);
+      box-shadow: 0 25px 70px rgba(23, 23, 23, 0.12);
+    }
+
+    /*
+      YOUR PHOTO WILL GO HERE.
+
+      Later, replace this placeholder with:
+      <img src="joy-photo.jpg" alt="Ejogbe Ofeoriste Joy">
+    */
+
+    .photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      background:
+        radial-gradient(circle at 30% 20%, #ffffff 0 8%, transparent 9%),
+        var(--beige);
+    }
+
+    .floating-card {
+      position: absolute;
+      background: var(--white);
+      padding: 14px 18px;
+      border-radius: 14px;
+      box-shadow: 0 15px 35px rgba(23, 23, 23, 0.12);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .floating-one {
+      top: 12%;
+      left: -25px;
+    }
+
+    .floating-two {
+      bottom: 17%;
+      right: -25px;
+    }
+
+    .floating-three {
+      bottom: 5%;
+      left: 5%;
+      background: var(--terracotta);
+      color: var(--white);
+    }
+
+    /* =========================
+       DARK STATEMENT
+    ========================= */
+
+    .statement {
+      background: var(--dark);
+      color: var(--white);
+      padding: 100px 0;
+    }
+
+    .statement h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 5vw, 65px);
+      line-height: 1.08;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+
+    .statement-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      color: #D8D1C7;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 5vw, 60px);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+    }
+
+    /* =========================
+       WHAT I DO
+    ========================= */
+
+    .services-intro {
+      margin-bottom: 55px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 30px;
+      min-height: 260px;
+      background: var(--white);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      transition: 0.35s ease;
+    }
+
+    .service-card:nth-child(2) {
+      background: var(--beige);
+    }
+
+    .service-card:nth-child(3) {
+      background: #EFE4D8;
+    }
+
+    .service-card:nth-child(4) {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(23, 23, 23, 0.10);
+    }
+
+    .number {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 60px;
+      opacity: 0.6;
+    }
+
+    .service-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      opacity: 0.75;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects-section {
+      background: var(--beige);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(23, 23, 23, 0.08);
+      transition: 0.35s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 25px 50px rgba(23, 23, 23, 0.12);
+    }
+
+    .project.large {
+      grid-column: span 7;
+    }
+
+    .project.small {
+      grid-column: span 5;
+    }
+
+    .video-placeholder {
+      height: 330px;
+      background:
+        linear-gradient(135deg, rgba(185, 101, 69, 0.18), rgba(201, 166, 107, 0.25)),
+        #DCD2C5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .project.small .video-placeholder {
+      height: 270px;
+    }
+
+    .play-button {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--dark);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      padding-left: 4px;
+    }
+
+    .project-info {
+      padding: 25px;
+    }
+
+    .project-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--terracotta);
+      margin-bottom: 8px;
+    }
+
+    .project h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-section {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-photo {
+      aspect-ratio: 4 / 5;
+      background: var(--beige);
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      overflow: hidden;
+    }
+
+    .about-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(40px, 5vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .about-content p {
+      color: #C9C2B9;
+      margin-bottom: 20px;
+      max-width: 650px;
+    }
+
+    .about-highlight {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 18px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      font-weight: 700;
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 35px;
+    }
+
+    .process-card {
+      border-top: 1px solid var(--dark);
+      padding-top: 25px;
+    }
+
+    .process-number {
+      font-family: "Playfair Display", serif;
+      font-size: 45px;
+      color: var(--terracotta);
+      margin-bottom: 20px;
+    }
+
+    .process-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .service-list-section {
+      background: var(--white);
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .service-list-item {
+      padding: 35px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .service-list-item:nth-child(odd) {
+      padding-right: 50px;
+      border-right: 1px solid var(--border);
+    }
+
+    .service-list-item:nth-child(even) {
+      padding-left: 50px;
+    }
+
+    .service-list-item h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .service-list-item p {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 480px;
+    }
+
+    /* =========================
+       WHY JOY
+    ========================= */
+
+    .why-section {
+      background: var(--beige);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      padding: 35px;
+      background: var(--cream);
+      border-radius: 20px;
+    }
+
+    .why-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: "";
+      width: 300px;
+      height: 300px;
+      background: var(--terracotta);
+      border-radius: 50%;
+      position: absolute;
+      left: -100px;
+      bottom: -140px;
+      opacity: 0.5;
+    }
+
+    .cta::after {
+      content: "";
+      width: 250px;
+      height: 250px;
+      background: var(--gold);
+      border-radius: 50%;
+      position: absolute;
+      right: -90px;
+      top: -100px;
+      opacity: 0.35;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(48px, 7vw, 85px);
+      line-height: 0.98;
+      margin-bottom: 25px;
+    }
+
+    .cta p {
+      color: #C9C2B9;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .button-light {
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    .button-light:hover {
+      background: var(--terracotta);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 5vw, 65px);
+      margin-bottom: 25px;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin: 35px 0;
+    }
+
+    .contact-item span {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      font-weight: 700;
+      color: var(--terracotta);
+      margin-bottom: 5px;
+    }
+
+    .contact-item a {
+      font-weight: 600;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      padding: 45px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-brand {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+    }
+
+    .footer-small {
+      color: #96918B;
+      font-size: 12px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .hero-visual {
+        margin-top: 20px;
+      }
+
+      .service-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project.large,
+      .project.small {
+        grid-column: span 6;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 80px 0;
+      }
+
+      .nav-inner {
+        min-height: 65px;
+      }
+
+      .nav-links a:not(.nav-button) {
+        display: none;
+      }
+
+      .nav-button {
+        padding: 9px 14px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero-grid {
+        gap: 45px;
+      }
+
+      .floating-one {
+        left: -5px;
+      }
+
+      .floating-two {
+        right: -5px;
+      }
+
+      .service-grid,
+      .process-grid,
+      .service-list,
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project.large,
+      .project.small {
+        grid-column: span 1;
+      }
+
+      .project.small .video-placeholder,
+      .video-placeholder {
+        height: 280px;
+      }
+
+      .service-list-item:nth-child(odd),
+      .service-list-item:nth-child(even) {
+        padding-left: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-details {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#" class="logo">JOY.</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+
+        <a href="#contact" class="nav-button">
+          LET'S WORK →
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <span class="eyebrow">AI Content Creator</span>
+
+        <h1>
+          I TURN BUSINESS IDEAS INTO VISUAL STORIES.
+        </h1>
+
+        <p class="hero-title">
+          AI Video Ads Creator & Content Strategist
+        </p>
+
+        <p class="hero-description">
+          I create attention-grabbing AI video content that helps businesses
+          showcase their products, services and ideas in fresh and engaging ways.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#work" class="button button-dark">
+            VIEW MY WORK →
+          </a>
+
+          <a href="#contact" class="button button-outline">
+            LET'S WORK TOGETHER
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="photo-frame">
+
+          <div class="photo-placeholder">
+            <strong>JOY'S PHOTO<br>GOES HERE</strong>
+          </div>
+
+        </div>
+
+        <div class="floating-card floating-one">
+          AI VIDEO
+        </div>
+
+        <div class="floating-card floating-two">
+          STORYTELLING
+        </div>
+
+        <div class="floating-card floating-three">
+          AI × STORY × BUSINESS
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- CREATIVE STATEMENT -->
+
+  <section class="statement">
+
+    <div class="container">
+
+      <h2>
+        Great content shouldn't just look good.
+        It should make people stop, watch and understand your business.
+      </h2>
+
+      <div class="statement-line">
+        <span>AI VIDEO ADS</span>
+        <span>•</span>
+        <span>PRODUCT CONTENT</span>
+        <span>•</span>
+        <span>BRAND STORYTELLING</span>
+        <span>•</span>
+        <span>SOCIAL MEDIA CONTENT</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT I DO -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">What I Do</span>
+
+        <h2>
+          Content built to make your business stand out.
+        </h2>
+
+        <p>
+          Whether you're launching a product, promoting a service or simply
+          trying to make your business more visible online, I create visual
+          content designed around your message.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="number">01</div>
+
+          <h3>AI Video Ads</h3>
+
+          <p>
+            Promotional videos created to capture attention and communicate
+            what your business offers.
+          </p>
+        </div>
+
+
+        <div class="service-card">
+          <div class="number">02</div>
+
+          <h3>Product Visuals</h3>
+
+          <p>
+            Creative AI visuals that make products more attractive,
+            memorable and ready for promotion.
+          </p>
+        </div>
+
+
+        <div class="service-card">
+          <div class="number">03</div>
+
+          <h3>Brand Storytelling</h3>
+
+          <p>
+            Turning a product, service or business idea into a visual story
+            people can connect with.
+          </p>
+        </div>
+
+
+        <div class="service-card">
+          <div class="number">04</div>
+
+          <h3>Social Content</h3>
+
+          <p>
+            Creative content designed for platforms where your customers
+            already spend their time.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SELECTED PROJECTS -->
+
+  <section class="projects-section" id="work">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Selected Projects</span>
+
+        <h2>
+          Real businesses. Real products. Creative AI content.
+        </h2>
+
+        <p>
+          A selection of AI-powered promotional videos I've created for real
+          businesses and brands as part of my creative portfolio and business outreach.
+        </p>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <!-- POULTRY -->
+
+        <article class="project large">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              AI PROMOTIONAL VIDEO
+            </div>
+
+            <h3>Poultry Brand</h3>
+
+            <p>
+              Creative promotional content developed around a poultry business
+              and its products.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- HAIR CARE -->
+
+        <article class="project small">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              AI PRODUCT ADVERTISEMENT
+            </div>
+
+            <h3>Hair Care Brand</h3>
+
+            <p>
+              AI-powered visual content created to showcase hair-care products.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- FOOD -->
+
+        <article class="project small">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              PRODUCT CONTENT
+            </div>
+
+            <h3>Food Brand</h3>
+
+            <p>
+              A creative promotional concept designed to make a food product
+              visually appealing and attention-grabbing.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- SOLAR -->
+
+        <article class="project large">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              AI ADVERTISEMENT CONCEPT
+            </div>
+
+            <h3>Solar Energy</h3>
+
+            <p>
+              A visual advertising concept created around solar energy and
+              the value of the service.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- VENDOR CIRCLE -->
+
+        <article class="project small">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              BUSINESS COMMUNITY
+            </div>
+
+            <h3>Vendor Circle</h3>
+
+            <p>
+              Promotional content created for a community where vendors
+              and buyers connect.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- PAINTING -->
+
+        <article class="project small">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              SERVICE ADVERTISEMENT
+            </div>
+
+            <h3>Painting Business</h3>
+
+            <p>
+              AI promotional content created to showcase a painting service.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- EVENT PLANNING -->
+
+        <article class="project large">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              COMING SOON
+            </div>
+
+            <h3>Event Planning</h3>
+
+            <p>
+              Creative visual content designed to showcase the experience
+              and possibilities offered by an event-planning business.
+            </p>
+
+            <span class="project-link">
+              COMING SOON
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- PERSONAL AI PROJECT -->
+
+        <article class="project small">
+
+          <div class="video-placeholder">
+            <div class="play-button">▶</div>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-tag">
+              PERSONAL CREATIVE PROJECT
+            </div>
+
+            <h3>AI Content Creation</h3>
+
+            <p>
+              An original project created to explore my approach to
+              AI-powered visual storytelling.
+            </p>
+
+            <span class="project-link">
+              VIEW PROJECT →
+            </span>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about-section" id="about">
+
+    <div class="container about-grid">
+
+      <div class="about-photo">
+        JOY'S PHOTO
+      </div>
+
+
+      <div class="about-content">
+
+        <span class="eyebrow">
+          About Joy
+        </span>
+
+        <h2>
+          I create with purpose, not just with AI.
+        </h2>
+
+        <p>
+          I'm Joy — an AI Video Ads Creator and Content Strategist passionate
+          about helping businesses communicate their products, services and
+          ideas through creative visual content.
+        </p>
+
+        <p>
+          I combine AI tools, storytelling and content strategy to create
+          promotional videos designed to capture attention and make a
+          business easier to understand.
+        </p>
+
+        <p>
+          My work spans different industries, from beauty and food to
+          agriculture, services, events and business communities.
+        </p>
+
+        <span class="about-highlight">
+          AI + CREATIVITY + STRATEGY
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROCESS -->
+
+  <section id="process">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">My Creative Process</span>
+
+        <h2>
+          From business idea to finished video.
+        </h2>
+
+        <p>
+          Good content starts with understanding the business before creating
+          the visuals.
+        </p>
+
+      </div>
+
+
+      <div class="process-grid">
+
+        <div class="process-card">
+
+          <div class="process-number">01</div>
+
+          <h3>Understand</h3>
+
+          <p>
+            I learn about your business, product, audience and the goal
+            behind the content.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">02</div>
+
+          <h3>Concept</h3>
+
+          <p>
+            I develop the creative direction, visual idea and story around
+            your message.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">03</div>
+
+          <h3>Create</h3>
+
+          <p>
+            I bring the concept to life using AI tools, visual storytelling
+            and video production.
+          </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+          <div class="process-number">04</div>
+
+          <h3>Deliver</h3>
+
+          <p>
+            You receive polished content created for your marketing and
+            social media.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="service-list-section" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Services</span>
+
+        <h2>
+          How I can help your business.
+        </h2>
+
+      </div>
+
+
+      <div class="service-list">
+
+        <div class="service-list-item">
+
+          <h3>AI Advertisement Videos</h3>
+
+          <p>
+            Promotional videos designed to introduce, explain or sell
+            your products and services.
+          </p>
+
+        </div>
+
+
+        <div class="service-list-item">
+
+          <h3>Product Videos</h3>
+
+          <p>
+            Creative product-focused videos that give your audience
+            a reason to stop and look.
+          </p>
+
+        </div>
+
+
+        <div class="service-list-item">
+
+          <h3>Social Media Content</h3>
+
+          <p>
+            Short-form content designed for TikTok, Instagram and WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="service-list-item">
+
+          <h3>AI Product Visuals</h3>
+
+          <p>
+            Creative AI-generated product scenes and visuals for marketing.
+          </p>
+
+        </div>
+
+
+        <div class="service-list-item">
+
+          <h3>Brand Storytelling</h3>
+
+          <p>
+            Visual stories that help your audience understand what your
+            business is about.
+          </p>
+
+        </div>
+
+
+        <div class="service-list-item">
+
+          <h3>Creative Campaigns</h3>
+
+          <p>
+            Multiple creative pieces built around a product launch,
+            promotion or business campaign.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY JOY -->
+
+  <section class="why-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">Why Joy?</span>
+
+        <h2>
+          Because AI is the tool. The idea still matters.
+        </h2>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+
+          <h3>Creative</h3>
+
+          <p>
+            I don't simply generate AI visuals. I think about the idea,
+            the story and how the content should make people feel.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>Business-Minded</h3>
+
+          <p>
+            The goal isn't just to make something beautiful. The content
+            needs to communicate your product or service clearly.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>Adaptable</h3>
+
+          <p>
+            I've created concepts across different industries, allowing
+            me to approach each business from its own perspective.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container cta-content">
+
+      <span class="eyebrow">
+        Let's Create Something
+      </span>
+
+      <h2>
+        Your business has a story.
+        Let's make people stop and watch.
+      </h2>
+
+      <p>
+        Whether you have a product that needs attention, a service you want
+        to promote or an idea you want brought to life, let's create something
+        your audience will remember.
+      </p>
+
+      <a href="#contact" class="button button-light">
+        WORK WITH JOY →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Contact
+      </span>
+
+      <h2>
+        Have a project in mind?
+      </h2>
+
+      <p>
+        Let's talk.
+      </p>
+
+
+      <div class="contact-details">
 
         <div class="contact-item">
 

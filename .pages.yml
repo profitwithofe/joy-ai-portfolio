@@ -1,0 +1,32 @@
+media: media
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    filename: "{primary}.yml"
+    fields:
+      - name: title
+        label: Project Name
+        type: string
+        required: true
+
+      - name: description
+        label: Project Description
+        type: rich-text
+
+      - name: image
+        label: Project Image
+        type: image
+
+      - name: video
+        label: Project Video
+        type: file
+        options:
+          categories:
+            - video
+
+      - name: link
+        label: Project Link
+        type: string

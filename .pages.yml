@@ -1,5 +1,4 @@
 media: media
-
 content:
   - name: site
     label: Site Settings

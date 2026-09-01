@@ -228,25 +228,10 @@
       box-shadow: 0 25px 70px rgba(23, 23, 23, 0.12);
     }
 
-    /*
-      YOUR PHOTO WILL GO HERE.
-
-      Later, replace this placeholder with:
-      <img src="joy-photo.jpg" alt="Ejogbe Ofeoriste Joy">
-    */
-
-    .photo-placeholder {
+    .photo-frame img {
       width: 100%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      color: var(--muted);
-      background:
-        radial-gradient(circle at 30% 20%, #ffffff 0 8%, transparent 9%),
-        var(--beige);
+      object-fit: cover;
     }
 
     .floating-card {
@@ -507,6 +492,12 @@
       justify-content: center;
       color: var(--muted);
       overflow: hidden;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .about-content h2 {
@@ -944,9 +935,10 @@
 
         <div class="photo-frame">
 
-          <div class="photo-placeholder">
-            <strong>JOY'S PHOTO<br>GOES HERE</strong>
-          </div>
+          <img
+            src="/media/IMG_0982.jpeg"
+            alt="Ejogbe Ofeoriste Joy"
+          >
 
         </div>
 
@@ -1351,7 +1343,12 @@
     <div class="container about-grid">
 
       <div class="about-photo">
-        JOY'S PHOTO
+
+        <img
+          src="/media/12991994-3693-4633-AED3-FB98A2344FFA.png"
+          alt="Ejogbe Ofeoriste Joy"
+        >
+
       </div>
 
 

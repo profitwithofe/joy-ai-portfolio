@@ -1,6 +1,17 @@
-media: media
-
 content:
+  - name: site
+    label: Site Settings
+    type: file
+    path: content/site.yml
+    fields:
+      - name: hero_image
+        label: Hero Image
+        type: image
+
+      - name: bottom_image
+        label: Bottom Image
+        type: image
+
   - name: projects
     label: Projects
     type: collection
@@ -30,3 +41,4 @@ content:
       - name: link
         label: Project Link
         type: string
+
